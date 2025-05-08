@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TypeScript & Next.js Learning Exercises
 
-## Getting Started
+このリポジトリは、TypeScriptとNext.jsの基本を実践的に学ぶための演習教材です。  
+Git操作・TypeScript文法・配列操作・型安全な開発手法など、現場で使えるスキルを体系的に学べます。
 
-First, run the development server:
+---
+
+## ✨ 学べること
+
+- GitとGitHubの基本操作（fork, clone, commitなど）
+- TypeScriptの文法（型定義、関数、オブジェクト、Union型など）
+- 配列・オブジェクトの操作（map, filter, spread構文）
+- テスト駆動での学習（`bun test` による自動チェック）
+- Next.jsでのフロントエンド開発（Lesson形式）
+
+---
+
+## 🏁 環境構築
+
+まずは [docs/00-setup.md](./docs/00-setup.md) を参照して、開発環境を準備してください。
+
+---
+
+## 📘 演習問題一覧（TypeScript）
+
+| No. | テーマ                             | 問題リンク                                              |
+|-----|----------------------------------|-------------------------------------------------------|
+| 01  | Hello Worldの関数                 | [01-hello-world](./docs/exercises/01-hello-world.md) |
+| 02  | 基本の型チェック                   | [02-basic-types](./docs/exercises/02-basic-types.md) |
+| 03  | 配列から偶数を抽出                 | [03-filter-even-numbers](./docs/exercises/03-filter-even-numbers.md) |
+| 04  | ユーザー情報の整形                 | [04-format-user](./docs/exercises/04-format-user.md) |
+| 05  | Union型の分岐処理                 | [05-weather-message](./docs/exercises/05-weather-message.md) |
+| 06  | Optional Chainの使い方            | [06-user-city](./docs/exercises/06-user-city.md) |
+| 07  | タグの差分取得（イミュータブル）    | [07-get-new-tags](./docs/exercises/07-get-new-tags.md) |
+| 08  | オブジェクトの部分更新             | [08-update-profile](./docs/exercises/08-update-profile.md) |
+| 09  | `map` によるデータ整形            | [09-extract-names](./docs/exercises/09-extract-names.md) |
+| 10  | `filter` による条件抽出           | [10-get-adults](./docs/exercises/10-get-adults.md) |
+
+---
+
+## 🧪 テストの実行方法
+
+以下のコマンドで、任意の問題に対応するテストを実行できます。
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 全てのテスト
+bun test
+# 任意のテスト
+bun test tests/01-hello-world.test.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Next.jsセクション
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+この後は、`Lesson1`〜`Lesson7`として、Next.jsによるページ実装演習を進めていきます。  
+（※順次追加予定）
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
