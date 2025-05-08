@@ -19,7 +19,7 @@ filterEvenNumbers([11, 13, 15]); // → []
 
 ## テスト
 
-ターミナルを開いて，以下のコマンドを実行します．
+ターミナルを開いて，以下のコマンドを実行します。
 
 ```bash
 bun test tests/03-filter-even-numbers.test.ts
